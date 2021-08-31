@@ -28,5 +28,5 @@ An Air-Pollution-Forecasting web application built with React.js, Material-UI an
 <h1></h1>
 
 <p align = "center">
-  Author: ansi22 🤓
+
 </p>
