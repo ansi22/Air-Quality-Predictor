@@ -24,12 +24,12 @@ function Compare() {
     } else {
       const fetch_Api = async () => {
         const Token = "b1908671c1b010b4c1af0e6dfba10397";
-        const Url_1 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude1}&lon=${longitude1}&appid=${Token}`;
+        const Url_1 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude1}&lon=${longitude1}&appid=${Token}`;
         const response_1 = await fetch(Url_1);
         const resp_1 = await response_1.json();
         console.log(resp_1);
         setValue1(resp_1);
-        const Url_2 = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude2}&lon=${longitude2}&appid=${Token}`;
+        const Url_2 = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude2}&lon=${longitude2}&appid=${Token}`;
         const response_2 = await fetch(Url_2);
         const resp_2 = await response_2.json();
         console.log(resp_2);
