@@ -63,8 +63,5 @@ export default makeStyles((theme) => ({
       width: "480px",
       margin: "auto",
     },
-    button: {
-      marginLeft: "190px",
-    },
   },
 }));
