@@ -16,7 +16,7 @@ function Home() {
     } else {
       const fetch_Api = async () => {
         const TOKEN = "b1908671c1b010b4c1af0e6dfba10397";
-        const Base_Url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude}&lon=${longitude}&appid=${TOKEN}`;
+        const Base_Url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude}&lon=${longitude}&appid=${TOKEN}`;
         const response = await fetch(Base_Url);
         const resp = await response.json();
         setValue(resp);
