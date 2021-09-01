@@ -57,8 +57,8 @@ function Chart(props) {
   ];
   const chartConfigs = {
     type: "column3d",
-    width: "700",
-    height: "400",
+    width: "100%",
+    height: "60%",
     boxShadow: "5px 10px",
     dataFormat: "json",
     dataSource: {

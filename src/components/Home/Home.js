@@ -6,52 +6,59 @@ import useStyles from "./style";
 function Home() {
   const classes = useStyles();
 
-  const [longitude, setLongitude] = useState(0);
-  const [lattitude, setLattitude] = useState(0);
+  const [longitude, setLongitude] = useState("");
+  const [lattitude, setLattitude] = useState("");
   const [value, setValue] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    const fetch_Api = async () => {
-      const TOKEN = "";
-      const Base_Url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude}&lon=${longitude}&appid=${TOKEN}`;
-      const response = await fetch(Base_Url);
-      const resp = await response.json();
-      setValue(resp);
-    };
-    fetch_Api();
+    if (longitude === "" || lattitude === "") {
+    } else {
+      const fetch_Api = async () => {
+        const TOKEN = "b1908671c1b010b4c1af0e6dfba10397";
+        const Base_Url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lattitude}&lon=${longitude}&appid=${TOKEN}`;
+        const response = await fetch(Base_Url);
+        const resp = await response.json();
+        setValue(resp);
+      };
+      fetch_Api();
+    }
   };
 
   return (
     <>
       <div className={classes.root}>
-        <Paper elevation={3} style={{ margin: "auto" }}>
+        <Paper elevation={6} style={{ margin: "auto" }}>
           <form
             onSubmit={handleSubmit}
             noValidate
             autoComplete="off"
             style={{ margin: "auto" }}
           >
-            <TextField
-              className={classes.text_row1}
-              id="standard-basic"
-              label="Longitude of City"
-              onChange={(event) => {
-                setLongitude(event.target.value);
-              }}
-            />
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <TextField
+                className={classes.text_row1}
+                id="standard-basic"
+                label="Longitude of City"
+                onChange={(event) => {
+                  setLongitude(event.target.value);
+                }}
+                error={longitude === ""}
+                helperText={longitude === "" ? "Required" : " "}
+              />
 
-            <TextField
-              className={classes.text_row2}
-              id="standard-basic"
-              label="Latitude of City"
-              onChange={(event) => {
-                setLattitude(event.target.value);
-              }}
-            />
-            <br />
-            <br />
+              <TextField
+                className={classes.text_row2}
+                id="standard-basic"
+                label="Latitude of City"
+                onChange={(event) => {
+                  setLattitude(event.target.value);
+                }}
+                error={lattitude === ""}
+                helperText={lattitude === "" ? "Required" : " "}
+              />
+            </div>
+
             <Button
               className={classes.button}
               onClick={handleSubmit}
@@ -67,10 +74,7 @@ function Home() {
         {!value ? (
           <></>
         ) : (
-          <Paper
-            elevation={3}
-            style={{ height: "400px", width: "700px", margin: "auto" }}
-          >
+          <Paper elevation={6} className={classes.paper}>
             <Chart data={value} className={classes.chart} />
           </Paper>
         )}

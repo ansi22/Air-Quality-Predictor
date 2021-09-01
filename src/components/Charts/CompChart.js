@@ -36,8 +36,8 @@ function CompChart(props) {
 
   const chartConfigs = {
     type: "mscolumn3d",
-    width: "700",
-    height: "400",
+    width: "100%",
+    height: "55%",
     dataFormat: "json",
     dataSource: {
       chart: {

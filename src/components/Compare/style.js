@@ -5,12 +5,12 @@ export default makeStyles((theme) => ({
     flexGrow: "1",
     display: "block",
     flexWrap: "wrap",
-    marginTop: "100px",
+    marginTop: "90px",
 
     "& > *": {
       margin: theme.spacing(1),
       width: theme.spacing(70),
-      height: theme.spacing(18),
+      height: theme.spacing(20),
     },
   },
   text_row1: {
@@ -24,6 +24,7 @@ export default makeStyles((theme) => ({
   button: {
     background: "#6D6F91",
     marginLeft: "240px",
+    marginTop: "20px",
   },
   chart: {
     margin: "auto",
@@ -43,24 +44,27 @@ export default makeStyles((theme) => ({
     root: {
       "& > *": {
         margin: theme.spacing(1),
-        width: theme.spacing(58),
-        height: theme.spacing(18),
+        width: theme.spacing(60),
+        height: theme.spacing(25),
       },
     },
     text_row1: {
       marginLeft: "30px",
     },
     text_row2: {
-      marginLeft: "15px",
+      marginLeft: "28px",
     },
     button: {
       background: "#6D6F91",
-      marginLeft: "190px",
+      marginLeft: "120px",
     },
     paper: {
       height: "380px",
-      width: "450px",
+      width: "480px",
       margin: "auto",
+    },
+    button: {
+      marginLeft: "190px",
     },
   },
 }));

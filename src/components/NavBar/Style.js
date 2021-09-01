@@ -19,4 +19,21 @@ export default makeStyles((theme) => ({
     fontFamily: "Andada Pro",
     fontSize: "15px",
   },
+
+  icon: {
+    color: "white",
+    fontSize: "30px",
+    padding: "2px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    title: {
+      fontSize: "17px",
+    },
+    title_1: {
+      fontSize: "12px",
+    },
+    icon: {
+      fontSize: "25px",
+    },
+  },
 }));

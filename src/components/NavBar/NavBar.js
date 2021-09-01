@@ -14,30 +14,28 @@ function NavBar() {
     <div className={classes.root}>
       <AppBar position="fixed" style={{ background: "#6D6F91" }}>
         <Toolbar>
-          <BlurOnIcon style={{ color: "white", fontSize: "30px" }} />
+          <BlurOnIcon className={classes.icon} />
           <Typography variant="h6" className={classes.title}>
             Pollution-Forecast
           </Typography>
 
           <NavLink to="/" style={{ textDecoration: "none" }}>
             <Button>
-              <HomeIcon
-                style={{ color: "white", fontSize: "30px", padding: "2px" }}
-              />
+              <HomeIcon className={classes.icon} />
               <Typography className={classes.title_1}>Home</Typography>
             </Button>
           </NavLink>
 
           <NavLink to="/compare" style={{ textDecoration: "none" }}>
             <Button>
-              <CompareIcon style={{ color: "white", fontSize: "30px" }} />
+              <CompareIcon className={classes.icon} />
               <Typography className={classes.title_1}>Compare</Typography>
             </Button>
           </NavLink>
 
           <Button>
             <a href="https://github.com/Ansi-Q">
-              <GitHubIcon style={{ color: "white", fontSize: "28px" }} />
+              <GitHubIcon className={classes.icon} />
             </a>
           </Button>
         </Toolbar>
