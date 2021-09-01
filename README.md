@@ -12,13 +12,13 @@ An Air-Pollution-Forecasting web application built with React.js, Material-UI an
 
 <h1></h1>
 <h4 align = "center">
- <p> Home-Page: Before-Search & After Search</p>
+ <p> Home-Page: Before-Search & After-Search</p>
   <p >
   <img src="/assets/Home_Search.png" width="410"/>
   <img src="/assets/Home_Result.png" width="410" />
   </p>
 
- <p> Compare-Page: Before-Search & After Search</p>
+ <p> Compare-Page: Before-Search & After-Search</p>
   
   <p>
   <img src="/assets/Compare_Search.png" width="410"/>
@@ -28,5 +28,5 @@ An Air-Pollution-Forecasting web application built with React.js, Material-UI an
 <h1></h1>
 
 <p align = "center">
-  Author: ansi22 🤓
+
 </p>
