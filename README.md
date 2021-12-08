@@ -15,7 +15,7 @@ Air-Pollution-Forecast
 - Clone the repository **'Air-Pollution-Forecasting-Webapp'** by clicking on the Clone button `https://github.com/ansi22/Air-Pollution-Forecasting-Webapp.git`. Alternatively, download the repository.
 - Navigate to the folder `$ cd Air-Pollution-Forecasting-Webapp`
 - Install all the required dependencies `$ npm i`
-- To run the frontend of the application: `$ npm start`
+- To run the application: `$ npm start`
 - Inside your browser, navigate to the link `localhost:3000`
 <h1></h1>
 <h4 align = "center">
