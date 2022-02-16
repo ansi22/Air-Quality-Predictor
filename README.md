@@ -3,7 +3,7 @@
 </p>
 
 <h1 align = "center">
-Air-Pollution-Forecast
+Air-Quality-Predictor
 </h1>
 
 ## Description
